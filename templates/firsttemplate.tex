@@ -1,0 +1,62 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{geometry}
+
+\setbeamercolor{titleblock}{fg=white, bg=black}
+
+\setbeamertemplate{frametitle}
+{
+    \begin{center}
+        \vspace{-0.7em}
+        \begin{beamercolorbox}[wd=\paperwidth, ht=3em, center]{titleblock}
+            \color{white}
+            \huge\insertframetitle
+        \end{beamercolorbox}
+    \end{center}
+}
+
+\title{Test Prés.}
+\author{Nolann Bougrainvlle}
+\institute{EPITECH}
+\date{December 2021}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Summary}
+
+    \begin{itemize}
+        \setlength\itemsep{2em}
+        \item<1-> Point 1
+        \item<2-> Point 2
+        \item<3-> Point 3
+        \item<4-> Point 4
+        \item<5-> Point 5
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Point 1}
+    
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            element1 & element2 & element3 \\
+            \hline
+            element1 & element2 & element3 \\
+            \hline
+            element1 & element2 & element3 \\
+            \hline
+            element1 & element2 & element3 \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\end{document}
+
+% 2 : Terminer de recopier ancien template ppt
+% (3) : Remplacer le texte par ces $+nomdevariable
+% (4) : Changer en txt + suppr fichiers temp inutiles 
