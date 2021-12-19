@@ -1,0 +1,5 @@
+USAGE
+    python auto_ppt.py [name_of_template]
+
+DESCRIPTION
+    name_of_template    see on github.com/NolannB14/auto_latex_ppt for templates name
