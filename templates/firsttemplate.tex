@@ -1,5 +1,8 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{bbding}
 \usepackage{xcolor}
 \usepackage{geometry}
 
@@ -9,54 +12,94 @@
 {
     \begin{center}
         \vspace{-0.7em}
-        \begin{beamercolorbox}[wd=\paperwidth, ht=3em, center]{titleblock}
+        \begin{beamercolorbox}[wd=\paperwidth, ht=2em, dp=1em, center]{titleblock}
             \color{white}
-            \huge\insertframetitle
+            \huge\insertframetitle\par
         \end{beamercolorbox}
     \end{center}
 }
 
-\title{Test Prés.}
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vspace*{10em}
+    \usebeamerfont{title}\Huge{\inserttitle}\par
+    \medskip
+    \usebeamerfont{author}\normalsize\uppercase\expandafter{\textrm \insertauthor}\par
+    \medskip
+    \begin{flushright}
+        \bigskip
+        \usebeamerfont{date}\insertdate\par
+    \end{flushright}
+}
+
+\title{PROJECT REVIEW}
 \author{Nolann Bougrainvlle}
-\institute{EPITECH}
 \date{December 2021}
 
 \begin{document}
-
-\frame{\titlepage}
-
-\begin{frame}{Summary}
-
-    \begin{itemize}
-        \setlength\itemsep{2em}
-        \item<1-> Point 1
-        \item<2-> Point 2
-        \item<3-> Point 3
-        \item<4-> Point 4
-        \item<5-> Point 5
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Point 1}
+    \frame{\titlepage}
     
-    \begin{center}
-        \begin{tabular}{|c|c|c|}
-            \hline
-            element1 & element2 & element3 \\
-            \hline
-            element1 & element2 & element3 \\
-            \hline
-            element1 & element2 & element3 \\
-            \hline
-            element1 & element2 & element3 \\
-            \hline
-        \end{tabular}
-    \end{center}
-\end{frame}
-
+    \begin{frame}{Summary}
+        
+        % Do a sidebar just for summary ?
+        
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{2em}
+            \item Project's Goals
+            \item Encountered Difficulties
+            \item Acquired Skills
+            \item Conclusion
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{Project's Goals}
+        
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item Point 1
+            \item Point 2
+            \item Point 3
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{Encountered Difficulties}
+        
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item Point 1
+            \item Point 2
+            \item Point 3
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{Acquired Skills}
+        
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item Point 1
+            \item Point 2
+            \item Point 3
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{Conclusion}
+        
+        \begin{minipage}[c][.6\textheight]{\textwidth}
+            \begin{itemize}[label=\Checkmark]
+                \setlength\itemsep{3em}
+                \item Point 1
+                \item Point 2
+            \end{itemize}
+            
+            \vfill
+            \begin{center}
+                Thank you for listening to me
+            \end{center}
+        \end{minipage}
+        
+    \end{frame}
 \end{document}
-
-% 2 : Terminer de recopier ancien template ppt
-% (3) : Remplacer le texte par ces $+nomdevariable
-% (4) : Changer en txt + suppr fichiers temp inutiles 
+    
+    % (3) : Remplacer le texte par ces $+nomdevariable
+    % (4) : Changer en txt + suppr fichiers temp inutiles 
+    
