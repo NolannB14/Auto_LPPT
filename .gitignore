@@ -2,7 +2,7 @@
 ### Project's .gitignore ###
 
 doc/
-templates/
+templates/*
 
 ### PYTHON .gitignore ###
 
