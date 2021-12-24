@@ -1,0 +1,93 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{bbding}
+\usepackage{xcolor}
+\usepackage{geometry}
+
+\setbeamercolor{titleblock}{fg=white, bg=black}
+
+\setbeamertemplate{frametitle}
+{
+    \begin{center}
+        \vspace{-0.7em}
+        \begin{beamercolorbox}[wd=\paperwidth, ht=2em, dp=1em, center]{titleblock}
+            \color{white}
+            \huge\insertframetitle\par
+        \end{beamercolorbox}
+    \end{center}
+}
+
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \vspace*{10em}
+    \usebeamerfont{title}\Huge{\inserttitle}\par
+    \medskip
+    \usebeamerfont{author}\normalsize\uppercase\expandafter{\textrm \insertauthor}\par
+    \medskip
+    \begin{flushright}
+        \bigskip
+        \usebeamerfont{date}\insertdate\par
+    \end{flushright}
+}
+
+\title{<maintitle>}
+\author{<author>}
+\date{<date>}
+
+\begin{document}
+    \frame{\titlepage}
+    
+    \begin{frame}{Summary}
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{2em}
+            \item <s_point1>
+            \item <s_point2>
+            \item <s_point3>
+            \item <s_point4>
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{<s_point1>}
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item <p1_point1>
+            \item <p1_point1>
+            \item <p1_point1>
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{<s_point2>}
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item <p2_point1>
+            \item <p2_point2>
+            \item <p2_point3>
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{<s_point3>}
+        \begin{itemize}[label=\Checkmark]
+            \setlength\itemsep{3em}
+            \item <p3_point1>
+            \item <p3_point2>
+            \item <p3_point3>
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{<s_point4>}
+        \begin{minipage}[c][.6\textheight]{\textwidth}
+            \begin{itemize}[label=\Checkmark]
+                \setlength\itemsep{3em}
+                \item <p4_point1>
+                \item <p4_point2>
+            \end{itemize}
+            
+            \vfill
+            \begin{center}
+                Thank you for listening to me
+            \end{center}
+        \end{minipage}
+    \end{frame}
+\end{document}
