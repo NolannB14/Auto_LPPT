@@ -79,11 +79,14 @@ def main():
         usage()
         return 0
     else:
-        if find_templates(av[1]) == 84:
-            return 84
-        render_folder(av[1])
-        generate_template(av[1])
-        render(av[1])
+        try:
+            if find_templates(av[1]) == 84:
+                return 84
+            render_folder(av[1])
+            generate_template(av[1])
+            render(av[1])
+        except KeyboardInterrupt:
+            system("rm -r results")
     return 0
 
 
