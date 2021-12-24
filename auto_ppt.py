@@ -42,11 +42,10 @@ def recursive_search(data, var_to_replaces):
     return var_to_replaces
 
 
-def replace_all(var_to_replaces):
+def replace_all(var_to_replaces, filename):
     for element in var_to_replaces:
-        test_file = open("./results/firsttemplate", "r+")
+        test_file = open("./results/" + filename, "r+")
         r_file = test_file.read()
-        # Rendre les valeurs affichés plus lisibles
         user_input = str(input(element + ":"))
         r_file = re.sub(element, user_input, r_file)
         test_file.seek(0)
@@ -62,14 +61,16 @@ def generate_template(path_to_template):
     data = data["slide_content"]
     for element in data:
         var_to_replaces = recursive_search(element, var_to_replaces)
-    replace_all(var_to_replaces)
+    replace_all(var_to_replaces, path_to_template)
     return 0
 
 
 def render(filename):
     rename("./results/" + filename, "./results/" + filename + ".tex")
     system(
-        "cd results && pdflatex firsttemplate.tex && find . -type f -not -name 'firsttemplate.pdf' -delete && mv firsttemplate.pdf .. && cd .. && rmdir results"
+        """cd results && pdflatex firsttemplate.tex && 
+        find . -type f -not -name 'firsttemplate.pdf' -delete &&
+        mv firsttemplate.pdf .. && cd .. && rmdir results"""
     )
 
 
@@ -88,7 +89,3 @@ def main():
 
 if __name__ == "__main__":
     exit(main())
-
-# Dernier check à faire pour dynamiser le prog
-# Pourquoi pas donner un path en args qui serait l'endroit où l'on met le
-# resultat (s'il n'y a pas d'arg alors garder le path par défaut)
