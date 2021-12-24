@@ -1,0 +1,34 @@
+{
+    "slide_content" : [
+        {
+            "title" : "<maintitle>",
+            "author" : "<author>",
+            "data" : "<date>",
+            "summary" : {
+                "s_point1" : "<s_point1>",
+                "s_point2" : "<s_point2>",
+                "s_point3" : "<s_point3>",
+                "s_point4" : "<s_point4>"
+            },
+            "point1" : {
+                "p1_point1" : "<p1_point1>",
+                "p1_point2" : "<p1_point2>",
+                "p1_point3" : "<p1_point3>"
+            },
+            "point2" : {
+                "p2_point1" : "<p2_point1>",
+                "p2_point2" : "<p2_point2>",
+                "p2_point3" : "<p2_point3>"
+            },
+            "point3" : {
+                "p3_point1" : "<p3_point1>",
+                "p3_point2" : "<p3_point2>",
+                "p3_point3" : "<p3_point3>"
+            },
+            "point4" : {
+                "p4_point1" : "<p4_point1>",
+                "p4_point2" : "<p4_point2>"
+            }
+        }
+    ]
+}

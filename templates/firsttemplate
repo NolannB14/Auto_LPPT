@@ -32,63 +32,56 @@
     \end{flushright}
 }
 
-\title{PROJECT REVIEW}
-\author{Nolann Bougrainvlle}
-\date{December 2021}
+\title{<maintitle>}
+\author{<author>}
+\date{<date>}
 
 \begin{document}
     \frame{\titlepage}
     
     \begin{frame}{Summary}
-        
-        % Do a sidebar just for summary ?
-        
         \begin{itemize}[label=\Checkmark]
             \setlength\itemsep{2em}
-            \item Project's Goals
-            \item Encountered Difficulties
-            \item Acquired Skills
-            \item Conclusion
+            \item <s_point1>
+            \item <s_point2>
+            \item <s_point3>
+            \item <s_point4>
         \end{itemize}
     \end{frame}
     
-    \begin{frame}{Project's Goals}
-        
+    \begin{frame}{<s_point1>}
         \begin{itemize}[label=\Checkmark]
             \setlength\itemsep{3em}
-            \item Point 1
-            \item Point 2
-            \item Point 3
+            \item <p1_point1>
+            \item <p1_point1>
+            \item <p1_point1>
         \end{itemize}
     \end{frame}
     
-    \begin{frame}{Encountered Difficulties}
-        
+    \begin{frame}{<s_point2>}
         \begin{itemize}[label=\Checkmark]
             \setlength\itemsep{3em}
-            \item Point 1
-            \item Point 2
-            \item Point 3
+            \item <p2_point1>
+            \item <p2_point2>
+            \item <p2_point3>
         \end{itemize}
     \end{frame}
     
-    \begin{frame}{Acquired Skills}
-        
+    \begin{frame}{<s_point3>}
         \begin{itemize}[label=\Checkmark]
             \setlength\itemsep{3em}
-            \item Point 1
-            \item Point 2
-            \item Point 3
+            \item <p3_point1>
+            \item <p3_point2>
+            \item <p3_point3>
         \end{itemize}
     \end{frame}
     
-    \begin{frame}{Conclusion}
-        
+    \begin{frame}{<s_point4>}
         \begin{minipage}[c][.6\textheight]{\textwidth}
             \begin{itemize}[label=\Checkmark]
                 \setlength\itemsep{3em}
-                \item Point 1
-                \item Point 2
+                \item <p4_point1>
+                \item <p4_point2>
             \end{itemize}
             
             \vfill
@@ -96,10 +89,5 @@
                 Thank you for listening to me
             \end{center}
         \end{minipage}
-        
     \end{frame}
 \end{document}
-    
-    % (3) : Remplacer le texte par ces $+nomdevariable
-    % (4) : Changer en txt + suppr fichiers temp inutiles 
-    
