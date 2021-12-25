@@ -53,8 +53,8 @@
         \begin{itemize}[label=\Checkmark]
             \setlength\itemsep{3em}
             \item <p1_point1>
-            \item <p1_point1>
-            \item <p1_point1>
+            \item <p1_point2>
+            \item <p1_point3>
         \end{itemize}
     \end{frame}
     
